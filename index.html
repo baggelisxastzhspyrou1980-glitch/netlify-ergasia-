@@ -1,12 +1,196 @@
 <!DOCTYPE html>
-<html>
-<head><meta charset="utf-8"></head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaggelis Chatzispyrou | ECE Portfolio</title>
+    <style>
+        :root {
+            --bg: #0f172a;
+            --card: #1e293b;
+            --text: #f8fafc;
+            --muted: #94a3b8;
+            --accent: #38bdf8;
+            --accent-glow: rgba(56, 189, 248, 0.15);
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+        }
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            padding: 2rem 1rem;
+        }
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+        }
+        header {
+            text-align: center;
+            padding: 3rem 1.5rem;
+            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+            border-radius: 16px;
+            border: 1px solid #334155;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+            margin-bottom: 2rem;
+        }
+        h1 {
+            font-size: 2.4rem;
+            color: var(--text);
+            margin-bottom: 0.4rem;
+        }
+        .subtitle {
+            color: var(--accent);
+            font-size: 1.15rem;
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+        .badge-container {
+            display: flex;
+            justify-content: center;
+            gap: 0.6rem;
+            flex-wrap: wrap;
+            margin-top: 1rem;
+        }
+        .badge {
+            background: var(--accent-glow);
+            color: var(--accent);
+            border: 1px solid rgba(56, 189, 248, 0.3);
+            padding: 0.3rem 0.85rem;
+            border-radius: 999px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+        section {
+            background: var(--card);
+            padding: 1.8rem;
+            border-radius: 14px;
+            border: 1px solid #334155;
+            margin-bottom: 1.5rem;
+        }
+        h2 {
+            color: var(--accent);
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            border-bottom: 1px solid #334155;
+            padding-bottom: 0.5rem;
+        }
+        p {
+            color: var(--muted);
+            margin-bottom: 0.8rem;
+        }
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 0.8rem;
+        }
+        .skill-box {
+            background: #0f172a;
+            padding: 0.8rem 1rem;
+            border-radius: 8px;
+            border: 1px solid #334155;
+            font-size: 0.95rem;
+        }
+        .skill-box strong {
+            color: var(--text);
+            display: block;
+            margin-bottom: 0.2rem;
+        }
+        .skill-box span {
+            color: var(--muted);
+            font-size: 0.85rem;
+        }
+        .timeline-item {
+            margin-bottom: 1.2rem;
+        }
+        .timeline-item:last-child {
+            margin-bottom: 0;
+        }
+        .timeline-title {
+            color: var(--text);
+            font-weight: 600;
+            font-size: 1.05rem;
+        }
+        .timeline-meta {
+            color: var(--accent);
+            font-size: 0.85rem;
+            margin-bottom: 0.3rem;
+        }
+        footer {
+            text-align: center;
+            color: var(--muted);
+            font-size: 0.85rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
 <body>
-  <h1>Ασκήσεις JavaScript</h1>
-  <ul>
-    <li><a href="exercise1.html">Άσκηση 1</a></li>
-    <li><a href="exercise2.html">Άσκηση 2</a></li>
-    <li><a href="exercise3.html">Άσκηση 3</a></li>
-  </ul>
+    <div class="container">
+        <header>
+            <h1>Vaggelis Chatzispyrou</h1>
+            <div class="subtitle">Electrical & Computer Engineering Undergraduate</div>
+            <p>4th-year Computer Engineering Track Student at the University of Western Macedonia</p>
+            <div class="badge-container">
+                <span class="badge">GPA: 8.28 / 10</span>
+                <span class="badge">2x Academic Performance Awards</span>
+                <span class="badge">English C2 (Michigan ECPE)</span>
+            </div>
+        </header>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                I am a fourth-year Electrical and Computer Engineering student specializing in Computer Engineering. 
+                Driven by problem-solving and hands-on learning, I have maintained an 8.28/10 GPA and received two university awards for top academic performance (1st and 3rd year).
+            </p>
+            <p>
+                Currently expanding my university-level foundation in software development and Linux environments, looking forward to software and IT internship opportunities starting February 2027.
+            </p>
+        </section>
+
+        <section id="skills">
+            <h2>Technical & Language Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-box">
+                    <strong>Programming</strong>
+                    <span>C, Introductory C++, Java</span>
+                </div>
+                <div class="skill-box">
+                    <strong>Web & Scripting</strong>
+                    <span>HTML5, CSS3, MATLAB</span>
+                </div>
+                <div class="skill-box">
+                    <strong>Systems & Tools</strong>
+                    <span>Linux (WSL/Ubuntu), Git, GitHub, VS Code</span>
+                </div>
+                <div class="skill-box">
+                    <strong>Workflows & Languages</strong>
+                    <span>AI-Assisted Coding, Greek (Native), English (C2)</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience">
+            <h2>Education & Experience</h2>
+            <div class="timeline-item">
+                <div class="timeline-title">B.Sc. in Electrical and Computer Engineering</div>
+                <div class="timeline-meta">University of Western Macedonia (Kozani) | 4th Year</div>
+                <p>Computer Engineering specialization. Awarded for 1st-place academic performance in Year 1 and 3rd-place performance in Year 3.</p>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-title">Crew Member (Seasonal)</div>
+                <div class="timeline-meta">McDonald's (Athens) | 2 Months</div>
+                <p>Worked in a fast-paced environment handling customer service, teamwork, and food preparation under tight time constraints.</p>
+            </div>
+        </section>
+
+        <footer>
+            <p>Available for Remote / Hybrid / In-Person Internships from February 2027</p>
+        </footer>
+    </div>
 </body>
-</html>g
+</html>git add index.html
